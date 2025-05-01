@@ -1,3 +1,43 @@
 * {
-    background-color: teal;
+    /* background-color: teal; */
+    background-color: rgb(197, 25, 95);
+    /* background-color: #666 */
+}
+
+h1 {
+    /* selector de tipo o elementos: Selecciona los elementos con ese nombre */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+}
+
+/* Selector de clase: las clases sí se comparten y se utilizan para agrupar */
+
+.ls-alimentos {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    font-size: 40px;
+    background-color: burlywood;
+}
+
+/* selectores de ID: Seeleccionan un elemento específicoy NO se comparte con otros elementos */
+
+#primer-parrafo {
+    background-color:blueviolet;
+    font-size: 60px;
+}
+
+#tablero-ajedrez{
+    height: 200px;
+    width: 400px;
+    border-radius: 25%;
+}
+
+#lobo-dj{
+    height: 200px;
+    width: 400px;
+    border-radius: 20%;
 }

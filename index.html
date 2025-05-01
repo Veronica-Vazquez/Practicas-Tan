@@ -6,96 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Se utiliza para el responsibe, pero no quiere decir que al colocarla, ya todo sea responvive-->
     <title>Document</title> <!-- Título del sitio -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css"> <!-- CSS externo -->
+
+    <!-- <style> /* CSS interno */
+        *{
+            background-color: rgb(197, 25, 95);
+            /* background-color: #666 */
+        }
+
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        p{
+            color: yellow;
+        }
+    </style> -->
+
 </head>
 
 <body>
     <h1>Mi top de dulces favoritos 🥴</h1> <!-- Solo debe haber un h1 por documento -->
     <h2>Pellizcos</h2>
-    <p>
+    <p style="color: cyan;" id="primer-parrafo"> <!-- CSS en línea -->
         Son de envoltura amarilla
     </p>
     <h3>Picafresa</h3>
-    <h4>Lucas</h5>
-        <h5>Pelon pelo rico</h5>
-        <h6>Paletas Xtrem de Mora</h6>
+    <h4>Lucas</h4>
+    <h5>Pelon pelo rico</h5>
+    <h6>Paletas Xtrem de Mora</h6>
 
-        <hr>
+    <hr>
 
-        <!-- Elementos en línea y elementos en bloque -->
-        <span>Este es un contenedor generico <strong>en línea</strong></span>
-        <span>Hola, soy otro contenedor en línea</span>
-        <div>Holi</div>
-        <div>Este es un contenedor generico <strong><em>en bloque</em></strong> </div>
+    <!-- Elementos en línea y elementos en bloque -->
+    <span>Este es un contenedor generico <strong>en línea</strong></span>
+    <span>Hola, soy otro contenedor en línea</span>
+    <div>Holi</div>
+    <div>Este es un contenedor generico <strong><em>en bloque</em></strong> </div>
 
-        <!-- Esta sería una forma incorrecta de anidación: -->
-        <p>
-            Mi gato es <strong> muy gruñon</p></strong>
+    <!-- Esta sería una forma incorrecta de anidación: -->
+    <p>
+        Mi gato es <strong> muy gruñon</p></strong>
 
-        <hr>
+    <hr>
 
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam minus explicabo, voluptas, similique
-            enim deserunt esse aspernatur totam assumenda est at earum, obcaecati nesciunt ullam maiores iusto qui?
-            Sapiente, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam doloremque quaerat
-            ducimus facere quasi officia asperiores magnam sit ex. Vero incidunt sunt minima, earum non totam delectus
-            illo excepturi?
-            Perferendis voluptatem culpa pariatur, accusantium possimus quibusdam modi commodi dignissimos a maxime quo
-            minima repellendus excepturi ipsa nesciunt laudantium odio est eius praesentium esse veritatis! Obcaecati
-            odit debitis eaque nostrum.
-            Distinctio fugit ad quae repudiandae a ut illo? Recusandae aliquam facilis enim et officia asperiores sit
-            officiis eius fuga maiores id alias sed, cupiditate expedita labore voluptate beatae nihil aut?
-            Beatae perspiciatis eos facilis, consequuntur ducimus voluptas, eveniet illum, blanditiis libero veniam
-            possimus consequatur voluptates numquam nulla error? Voluptas non eum accusamus incidunt quas saepe est
-            perferendis! Labore, quae fugit!
-        </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam minus explicabo, voluptas, similique
+        enim deserunt esse aspernatur totam assumenda est at earum, obcaecati nesciunt ullam maiores iusto qui?
+        Sapiente, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam doloremque quaerat
+        ducimus facere quasi officia asperiores magnam sit ex. Vero incidunt sunt minima, earum non totam delectus
+        illo excepturi?
+        Perferendis voluptatem culpa pariatur, accusantium possimus quibusdam modi commodi dignissimos a maxime quo
+        minima repellendus excepturi ipsa nesciunt laudantium odio est eius praesentium esse veritatis! Obcaecati
+        odit debitis eaque nostrum.
+        Distinctio fugit ad quae repudiandae a ut illo? Recusandae aliquam facilis enim et officia asperiores sit
+        officiis eius fuga maiores id alias sed, cupiditate expedita labore voluptate beatae nihil aut?
+        Beatae perspiciatis eos facilis, consequuntur ducimus voluptas, eveniet illum, blanditiis libero veniam
+        possimus consequatur voluptates numquam nulla error? Voluptas non eum accusamus incidunt quas saepe est
+        perferendis! Labore, quae fugit!
+    </p>
 
-        <!-- Tipos de listas -->
-        <!-- Lista ordenada -->
+    <!-- Tipos de listas -->
+    <!-- Lista ordenada -->
 
-        <h3> Top 5 de ingredientes favs en mis comidas </h3>
-        <ol>
-            <li>Aguacate</li>
-            <li>Chapulines</li>
-            <li>Limón</li>
-            <li>Zanahoria</li>
-        </ol>
+    <h3> Top 5 de ingredientes favs en mis comidas </h3>
+    <ol>
+        <li class="ls-alimentos">Aguacate</li>
+        <li>Chapulines</li>
+        <li>Limón</li>
+        <li>Zanahoria</li>
+    </ol>
 
-        <!-- Lista desordenada -->
-        <h3> Top 5 de ingredientes non gratos en mis comidas </h3>
+    <!-- Lista desordenada -->
+    <h3> Top 5 de ingredientes non gratos en mis comidas </h3>
+    <ul>
+        <li> Ajos enteros </li>
+        <li> Manteca de cerdo </li>
+        <li> Mollejas </li>
         <ul>
-            <li> Ajos enteros </li>
-            <li> Manteca de cerdo </li>
-            <li> Mollejas </li>
-                <ul>
-                    <li>De pollo</li>
-                    <li>res</li>
-                    <li>cerdo</li>
-                </ul>
-                    <ul>
-                        <ol>
-                            <li>Saben feo</li>
-                        </ol>
-                    </ul>
-            <li> Aderezo ranch</li>
-            <li> Sal en exceso</li>
+            <li>De pollo</li>
+            <li>res</li>
+            <li>cerdo</li>
         </ul>
+        <ul>
+            <ol>
+                <li>Saben feo</li>
+            </ol>
+        </ul>
+        <li> Aderezo ranch</li>
+        <li> Sal en exceso</li>
+    </ul>
 
-        <span> Comida de películas </span>
-        <dl>
-            <dt>Cerveza de mantequilla</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo eaque illo, eos, nam minima impedit
-                corporis reiciendis ipsa tenetur architecto. Laborum in dolores dolor totam doloremque praesentium dicta
-                molestias.</dd><br> <!-- Break, da un salto de línea, espaciado -->
+    <span> Comida de películas </span>
+    <dl>
+        <dt class="ls-alimentos">Cerveza de mantequilla</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo eaque illo, eos, nam minima impedit
+            corporis reiciendis ipsa tenetur architecto. Laborum in dolores dolor totam doloremque praesentium dicta
+            molestias.</dd><br> <!-- Break, da un salto de línea, espaciado -->
 
-            <dt>Ranas de chocolate</dt>
-            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptate porro rem doloremque sunt
-                corporis dolorum temporibus consequuntur dolores, rerum, atque reprehenderit quia ab dignissimos quidem
-                voluptatibus at corrupti consectetur.</dd>
-        </dl>
+        <dt class="ls-alimentos">Ranas de chocolate</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptate porro rem doloremque sunt
+            corporis dolorum temporibus consequuntur dolores, rerum, atque reprehenderit quia ab dignissimos quidem
+            voluptatibus at corrupti consectetur.</dd>
 
-        <img src="https://cdn.pixabay.com/photo/2025/04/15/18/52/chess-9536049_1280.jpg" alt="tablero de ajedrez">
-        <img src="./img/fondo.jpg" alt="imagen de un lobo enfrente de una tornamesa de DJ y con audifonos, con colores fosofrecentes">
+        <dt class="ls-alimentos">Cerveza de mantequilla 2</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo eaque illo, eos, nam minima impedit
+            corporis reiciendis ipsa tenetur architecto. Laborum in dolores dolor totam doloremque praesentium dicta
+            molestias.</dd><br> <!-- Break, da un salto de línea, espaciado -->
+
+        <dt>Ranas de chocolate 2</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptate porro rem doloremque sunt
+            corporis dolorum temporibus consequuntur dolores, rerum, atque reprehenderit quia ab dignissimos quidem
+            voluptatibus at corrupti consectetur.</dd>
+    </dl>
+
+    <img id="tablero-ajedrez" src="https://cdn.pixabay.com/photo/2025/04/15/18/52/chess-9536049_1280.jpg" alt="tablero de ajedrez">
+    <img id="lobo-dj" src="./img/fondo.jpg"
+        alt="imagen de un lobo enfrente de una tornamesa de DJ y con audifonos, con colores fosofrecentes">
+
+
+    <p>
+        Este es un ejemplo adicional
+        Este es un ejemplo adicional
+        Este es un ejemplo adicional
+        Este es un ejemplo adicional
+    </p>
 </body>
 
 </html>
